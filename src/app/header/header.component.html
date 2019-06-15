@@ -1,33 +1,83 @@
-<header>
-<nav class="navbar navbar-expand-md navbar-dark bg-dark">
-  <a class="navbar-brand" routerLink="/home" routerLinkActive="active" href="#">Issue Reporter</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" (click)="isCollapsed = !isCollapsed" aria-label="Toggle navigation">
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+  <div class="container">
+    <a href="index.html" class="navbar-brand">Glozzom</a>
+    <button
+      class="navbar-toggler"
+      data-toggle="collapse"
+      data-target="#navbarCollapse"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <a
+              class="navbar-brand"
+              routerLink="/home"
+              routerLinkActive="active"
+              href="#"
+              >Issue Reporter</a
+            >
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarsExample04"
+              aria-controls="navbarsExample04"
+              (click)="isCollapsed = !isCollapsed"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
 
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" [ngbCollapse]="!isCollapsed" id="navbarsExample04">
-    <ul class="navbar-nav ml-auto">
-
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/addIssue" routerLinkActive="active">Report Issue</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/contacts" routerLinkActive="active">Contacts</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">LogIn</a>
-      </li>
-      <li class="nav-item dropdown" ngbDropdown>
-        <a class="nav-link dropdown-toggle" id="dropdown04" ngbDropdownToggle>Dropdown</a>
-        <div class="dropdown-menu" aria-labelledby="dropdown04" ngbDropdownMenu>
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li>
-    </ul>
-
+            <div
+              class="collapse navbar-collapse"
+              [ngbCollapse]="!isCollapsed"
+              id="navbarsExample04"
+            >
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    routerLink="/addIssue"
+                    routerLinkActive="active"
+                    >Report Issue</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    routerLink="/contacts"
+                    routerLinkActive="active"
+                    >Contacts</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">LogIn</a>
+                </li>
+                <li class="nav-item dropdown" ngbDropdown>
+                  <a
+                    class="nav-link dropdown-toggle"
+                    id="dropdown04"
+                    ngbDropdownToggle
+                    >Dropdown</a
+                  >
+                  <div
+                    class="dropdown-menu"
+                    aria-labelledby="dropdown04"
+                    ngbDropdownMenu
+                  >
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </li>
+      </ul>
+    </div>
   </div>
 </nav>
-</header>

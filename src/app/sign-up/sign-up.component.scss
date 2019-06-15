@@ -10,13 +10,13 @@ align-content: center;
 
 .inventory-body {
 
-  position: fixed;
-   top: 56;
+  position: relative;
+   top: 0;
    left: 0;
    min-width: 100%;
    min-height: 100%;
    background-repeat: no-repeat;
-   background-position: 50% 60%;
+  //  background-position: 50% 60%;
    background-size: cover;
    background-image: url('src/assets/shield.jpg');
    filter: brightness(140%)
